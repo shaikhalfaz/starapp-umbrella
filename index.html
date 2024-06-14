@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umbrella</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="customizer">
+        <h1> Custom Umbrella </h1>
+        
+        <div class="color-btns">
+            <button class="color-btn" data-color="pink" style="background-color: pink;"></button>
+            <button class="color-btn" data-color="blue" style="background-color: blue;"></button>
+            <button class="color-btn" data-color="yellow" style="background-color: yellow;"></button>
+        </div>
+        <div class="umbrella-preview">
+            <img id="umbrella" src="pink-umbrella.png" alt="Umbrella Preview">
+            <img id="logo-preview" src="">
+        </div>
+        <div>
+            <h4>Customize your Umbrella</h4>
+            <p>Upload a logo for an instant preview</p>
+
+            <small>.png and .jpg file only. Max file size is 5 MB</small>
+        </div>
+        <label for="logo-upload" class="upload-button">
+            <img id="upload-icon" src="upload_icon.svg">
+            <span class="file-name">No file chosen</span>
+        </label>
+        <input type="file" id="logo-upload" accept="image/*" style="display:none;">
+    </div>
+</body>
+</html>
